@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Base */
+:root 
+{
+	
+	--main-bg-color: #f5f5f5;
+	--navbar-bg-color: #929cf0; /*prev #dbaee6*/
+	
+	--text-color: #4a4a4a;
+	--emphasis-color: #929cf0;
+	--link-color: #929cf0;
+	
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* Body */
+body 
+{
+	background-color: var(--main-bg-color);
+	text-align: center;
+	font-size: 16pt;
+	margin: 0;
+	overflow: auto;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	overflow-x: hidden;
+	padding: 0;
+}
+/*these all seem unnecessary*/
+h1
+{
+	/*title*/
+}
+h2 
+{
+	/*header*/
+}
+h3
+{
+	/*navbar*/
+}
+h4
+{
+	/*description*/
+}
+h5
+{
+	color: var(--emphasis-color);
+}
+
+a {
+	color: var(--emphasis-color);
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+a:hover{
+	text-decoration: underline;
+}
+em{
+	color: var(--emphasis-color);
+	font-style: normal;
+}
+
+/*Navigation bar*/
+
+.heading
+{
+	background-color: var(--navbar-bg-color);
+	position: relative;
+	top: 0;
+	margin: 0;
+	padding: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	vertical-align: center;
+	overflow: hidden;
+	overflow-x: hidden;
+	font-weight: bold;
+}
+.center {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+.flex-container {
+	display: flex;
+	flex-direction: column;
+
+}
+
+h1.nav {
+	margin: 0px;
+}
+h2.project {
+}
+h2.subtitle{
+	margin: 0;
+	font-size: 20px;
+}
+h2.page{
+	margin: 10px;
+	font-size: 36px;
+	font-weight: 900;
+}
+h2.section{
+	margin: 15px;
+	padding: 0;
+	font-size: 30px;
+	font-weight: 900;
+}
+h4.description
+{
+	margin: 15px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	font-weight: 100;
+}
+h4.small
+{
+	margin: 5px;
+	font-size: 10px;
+	font-weight: 100;
+}
+
+.thumbnail
+{
+	padding: 0;
+	margin: 0;
+	height: 12rem;
+	display: inline-block;
+}
+.thumbnail:hover
+{
+	box-shadow: 0 0 0 3px var(--emphasis-color);
+}
+
+.inlineImage
+{
+	padding: 0;
+	margin: 0;
+	height: 12rem;
+	display: inline-block;
+}
+.largeImage
+{
+	padding: 0;
+	height: 30rem;
+	display: inline-block;
+}
+
+.headshot
+{
+	margin: 0;
+	display: inline-block;
+	width: 15rem;
+	box-shadow: 0 0 0 3px var(--emphasis-color);
+}
+
+ul{
+	margin: 15px;
+	text-align: left;
+}
+
+
+nav{
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	background-color: var(--text-color);
+	text-align: center;
+	font-size: 14pt;
+	width: 100%;
+	padding: 5px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.split{
+	display: flex;
+}
+
+.split div{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	display:grid;
+	position: relative;
+	justify-content: start;
+	flex-direction: column;
+	flex: 1;
+	border-right: 2px solid var(--text-color);
+	align-items: center;
+	display: flex;
+	
+}
+
+.split div:last-child{
+	border: none;
+}
+
+.clear{
+	display: flex;
+}
+
+.clear div{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	display:grid;
+	position: relative;
+	justify-content: start;
+	flex-direction: column;
+	flex: 1;
+	border-right: 2px solid var(--main-bg-color);
+	align-items: center;
+	display: flex;
+	
+}
+
+hr
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+textBlock{
+	position: relative;
+}
+
+footer{
+	margin-top: auto;
+	text-align: center;
+	padding: 10px;
+}
+
+/*Main*/
+.main
+{
+}
+
+
+	
