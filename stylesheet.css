@@ -4,14 +4,15 @@
 :root {
 	/* Background colors*/
 	--main-bg-color: #f5f5f5;
-	--heading-bg-color: #929cf0;
-	--nav-bg-color: #4a4a4a;
+	--heading-bg-color: #9497f5;
+	--nav-bg-color: #464444;
 	--project-item-bg-color: #e8e8e8;
 
 	/* Text color/style*/
 	--text-color: #4a4a4a;
-	--emphasis-color: #929cf0;
-	--link-color: #929cf0;
+	--emphasis-color: #9573bf;
+	--nav-link-color: #aab0ee;
+	--link-color: #bec4f8;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -64,8 +65,12 @@ nav{
 	align-items: center;
 }
 
-nav,a{
+nav > a{
 	font-size: 14pt;
+}
+
+nav > a{
+	color: var(--nav-link-color);
 }
 
 
@@ -94,23 +99,42 @@ h1 {
 
 h2 {
 	/* Content header */
-	font-size: 20pt;
 	margin:0;
 	padding:0;
 }
+.project-details h2{
+	font-size: 1.17em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
 
 h3 {
-
+	/* Content subsection header */
 }
 
 
 /* Content text */
 section {
 	/* Descriptive text */
-	margin-top: 10px;
+	margin: 60px;
+	margin-top: 0px;
 	margin-bottom: 10px;
 	font-size: 16px;
 	font-weight: 100;
+}
+.project-details{
+	display:flex;
+	flex-direction: column;
+	background-color: var(--project-item-bg-color);
+	text-align: left;
+	width: 70%;
+	align-self: center;
+	padding: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.project-details p{
+	margin-top: 0px;
 }
 
 a {
@@ -132,19 +156,30 @@ em{
 
 .project-item p {
 	font-size: 12pt;
+	margin-bottom: 0;
 }
 	
 
 /* Images */
-.thumbnail{
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	display: inline-block;
+.thumbnail
+{
+  /*overflow: visible;*/
+	padding:0;
+	margin: 0 auto;
+	height: 12rem;
+  	transition: transform .2s;
 }
-
-.thumbnail:hover{
+.thumbnail:hover
+{
 	box-shadow: 0 0 0 3px var(--emphasis-color);
+	transform: scale(1.05);
+
+}
+.project-image{
+  /*overflow: visible;*/
+	padding:0;
+	margin: 0 auto;
+	height: 15rem;
 }
 
 .inlineImage{
@@ -195,6 +230,25 @@ em{
 	padding: 20px; */
 	font-size: 12pt;
 }
+.project-images {
+	display: grid;
+	width: 70%;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: auto;
+
+	grid-auto-flow: row;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	justify-self: center;
+
+	justify-content: center;
+
+	grid-row-gap: 5px;
+	grid-column-gap: 5px;
+}
 
 
 /* Footer */
@@ -218,6 +272,9 @@ hr{
 }
 
 ul{
-	margin: 15px;
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+	padding-left: 1.17em;
 	text-align: left;
 }

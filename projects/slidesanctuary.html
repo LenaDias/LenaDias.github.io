@@ -3,62 +3,116 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
 		<link rel = "icon" href = "../images/icon.png">
-		<title>Lena Dias | Slide Sanctuary</title>
-		
-		<meta charset = "utf-8"/>
-		<meta name = "copyright" content = "Lena Sofia Dias"/>
+
+		<title>Lena Dias | Project Title</title>
+		<link rel="canonical" href="https://lenadias.com/projects">
+
 		<meta name = "site_name" content = "lenadias.com"/>
 		<meta name = "description" content = "Portfolio site for Lena Dias, Computer Scientist and Game Developer in Massachusetts."/>
+		<meta name = "copyright" content = "Lena Sofia Dias"/>
+		<meta name = "author" content="Lena Dias"/>
+		
+		
+		<meta charset = "utf-8"/>
 		<meta name = "url" content = "https://lenadias.com"/>
 		<meta name = "type" content = "website"/>
-		<meta name = "keywords" content = "game developer, game development, computer science, computer scientist, massachusetts, boston, portfolio"/>
-		
-		<meta name = "author" content="Lena Dias"/>
+		<meta name = "keywords" content = "game developer, game development, computer science, computer scientist, massachusetts, boston, portfolio, projects"/>
 		<meta name = "robots" content = "follow"/>
 		<meta http-equiv="cache-control" content="no-cache"/>
 	</head>
 	<body>
-		<div class = "flex-container">
-			<div class = "heading">
-				<h1 class = "nav">&lt; LENA DIAS &gt;</h1>
-				<h2 class = "subtitle">Computer Science & Game Development</h2>
+		<header>
+				<h1>&lt; LENA DIAS &gt;</h1>
+				<h2>Computer Science & Game Development</h2>
+				<nav>
+					<a href = "https://lenadias.com/">Home</a>
+					<a href = "https://lenadias.com/projects">Projects</a>
+					<a href = "https://lenadias.com/resume">Resume</a>
+					<a href = "https://lenadias.com/about">About</a>
+				</nav>
+		</header>
+
+		<h1>Slide Sanctuary</h1>
+		<hr>
+
+		<section id="Page description">
+		</section>
+
+		<section id="Project description">
+			A curious browser game about moving around the rooms of a dungeon like a slide puzzle.
+		</section>
+
+		<section id="Project images">
+			<div class="project-images">
+				<img alt="The title screen, demonstrating controls mouse and keyboard. The game's title, Slide Sanctuary, is displayed, as well as Team Double Jump. Pixel art of a skull is present on screen." title="The title screen, demonstrating controls." class="project-image" src="../images/slidesanctuary.png">
+				<img alt="The first level of the game. Three rooms, with exit points, are seen from overhead. Also present are the green player pixel and the blue exit staircase." title="The first level, with green player and blue exit staircase." class="project-image" src="../images/slidesanctuary2.png">
+				<img alt="The first level of the game. The top right room has been clicked on and moved to the left, creating a path for the player to access the exit staircase." title="The first level, after clicking the top right room." class="project-image" src="../images/slidesanctuary3.png">
+				<img alt="A later level of the game, this one containing a yellow key and yellow door. The player is moving towards the yellow key. The black inventory bar at the top of the screen is empty." title="Another level with an uncollected key." class="project-image" src="../images/slidesanctuary4.png">
+				<img alt="The later level, but the key has been collected and placed in the player's black inventory bar. The player is moving towards the yellow door." title="Another level with a collected key." class="project-image" src="../images/slidesanctuary5.png">
+				<img alt="The later level, but the yellow door has been unlocked and has thus disappeared. The key has been removed from the player's inventory and the player is moving towards the exit staircase." title="Another level, but the key has been used to open the yellow door. Freedom!" class="project-image" src="../images/slidesanctuary6.png">
 			</div>
-			<nav>
-				<a href = "https://lenadias.com/">Home</a>
-				<a href = "https://lenadias.com/projects">Projects</a>
-				<a href = "https://lenadias.com/resume">Resume</a>
-				<a href = "https://lenadias.com/about">About</a>
-			</nav>
-			<div>
-				<h2 class = "page">Slide Sanctuary</h2>
-				<hr>
-				<h4 class = "description"> 
-					Click <a href = "../resources/A29.zip" target="_blank">here</a> to download. 
-				</h4>
-				<h4 class = "description"> 
-					Click <a href = "../resources/A29/game.html" target="_blank">here</a> to play.
-				</h4>
-				<img class = "largeImage" src="../images/slidesanctuary.png">
-				<h4 class = "description">
-				A curious browser game about moving around the rooms of a dungeon like a slide puzzle.
-					</h4>
-				<h4 class = "description">
-					<em>Stats:</em>
-					<ul style = "list-style-position: inside;padding-left: 15%;">
-						<li>Language: Javascript</li>
-						<li>Tools: Perlenspiel, IntelliJ IDEA</li>
-						<li>Development time: ~3 days</li>
-						<li>Year: 2021</li>
-					</ul>
-				</h4>
-			</div>
-		</div>
+		</section>
+
+		<section id="About project" class="project-details">
+			<h2>About:</h2>
+			<p>Slide Sanctuary was created as part of a Digital Game Design class at WPI, and evolved over the course of multiple builds. It was created in Perlenspiel, an ultra-lightweight, Javascript-based game engine, which intentionally limits graphical possibilities to encourage intelligent, elegant design.  
+			</p>
+			<p>Players click on one of three rooms in the dungeon to move the room into the empty space on the board (like in a slide puzzle); players must rearrange the dungeon and gather keys in order to make a path to the staircase and escape the dungeon.
+			</p>
+		</section>
+
+		<section id="Development details" class="project-details">
+			<h2>Development details:</h2>
+			<p>
+				<em>Developed: </em>2021
+				<br><em>Development time: </em>~3 days
+				<br><em>Languages: </em>Javascript
+				<br><em>Tools: </em>Perlenspiel engine, IntelliJ IDEA
+			</p>
+		</section>
+
+		<section id="Project team" class="project-details">
+			<h2>Team:</h2>
+			<ul><li>Lena Dias (myself)</li></ul>
+		</section>
+
+		<section id="My role" class="project-details">
+			<h2>My role:</h2>
+			<p>
+				<em>Lead Programmer</em>
+			</p>
+			<ul>
+				<li>Created core game idea</li>
+				<li>Programmed entirety of game, including player movement, lock-and-key system, inventory, audio, and level loading</li>
+				<li>Developed 15+ levels, which steadily increase in difficulty and wordlessly teach the player the game mechanics</li>
+				<li>Drew title screen skull pixel art</li>
+				<li>Created survey materials for gathering feedback on intuitivity, usability, stability</li>
+				<li>Reassessed design according to playtesting feedback</li>
+				<li>Managed builds and release versions</li>
+			</ul>
+		</section>
+
+		<section id="My thoughts" class="project-details">
+			<h2>My thoughts:</h2>
+			<p>
+				Honestly, I'm really happy with this one! Though, graphically, it looks unimpressive, the real challenge with this one was working around the intentionally-imposed limitations of the Perlenspiel engine; developers have very few pixels and a single line of text to work with, and thus need to be elegant when conveying mechanics to players. With the art depicting the controls on the title screen, sound feedback, and the traditional design language of an "inventory" bar, playtesters quickly got the hang of mechanics. I feel like I did a lot with very little with this project; there's solid mechanical progression, too!
+			</p>
+		</section>
+
+		<section id="Project links" class="project-details">
+			<h2>Links:</h2>
+			<p>
+				Download <a href="../resources/A29.zip" target="_blank">here</a>
+				<br>Play online <a href="../resources/A29/game.html" target="_blank">here</a>
+			</p>
+		</section>
+
 		<footer>
-			<h4 class = "small">
 			Website was coded by myself using HTML and CSS.
-			<br> Font is Open-Sans from Google APIs.
-			<br> Site © Lena Sofia Dias 2022 
-			</h4>
+			<br> 
+			Font is Open-Sans from Google APIs.
+			<br> 
+			Site © Lena Sofia Dias 2022 
 		</footer>
 	</body>
 </html>
