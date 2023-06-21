@@ -6,7 +6,7 @@
 	--main-bg-color: #f5f5f5;
 	--heading-bg-color: #929cf0;
 	--nav-bg-color: #4a4a4a;
-	--project-item-bg-color: #e0dede;
+	--project-item-bg-color: #e8e8e8;
 
 	/* Text color/style*/
 	--text-color: #4a4a4a;
@@ -31,7 +31,8 @@ body {
 	margin: 0;
 
 	overflow: auto;
-	overflow-x: hidden;
+
+	min-width:300px;
 }
 
 
@@ -53,7 +54,8 @@ nav{
 	margin:0;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 
 	position: relative;
 	text-align: center;
@@ -92,6 +94,13 @@ h1 {
 
 h2 {
 	/* Content header */
+	font-size: 20pt;
+	margin:0;
+	padding:0;
+}
+
+h3 {
+
 }
 
 
@@ -120,13 +129,17 @@ em{
 	color: var(--emphasis-color);
 	font-style: normal;
 }
+
+.project-item p {
+	font-size: 12pt;
+}
 	
 
 /* Images */
 .thumbnail{
 	padding: 0;
 	margin: 0;
-	height: 12rem;
+	width: 100%;
 	display: inline-block;
 }
 
@@ -158,21 +171,29 @@ em{
 /* Containers */
 .grid-container {
 	display: grid;
-	grid-template-columns: 2;
+	width: 60%;
+
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: auto;
 
 	grid-auto-flow: row;
 
 	margin-left: auto;
 	margin-right: auto;
 
+	row-gap: 15px;
 	column-gap: 15px;
+
+	justify-self: center;
+
+	justify-content: center;
 }
 
 .project-item{
 	background-color: var(--project-item-bg-color);
-	/* display: inline-block;
-	height: fit-content;
+	height: minmax(100%, fit-content);
 	padding: 20px; */
+	font-size: 12pt;
 }
 
 
@@ -181,6 +202,7 @@ footer{
 	margin-top: auto;
 	text-align: center;
 	padding: 10px;
+	margin-top: 20px;
 
 	font-size: 10px;
 	font-weight: 100;
