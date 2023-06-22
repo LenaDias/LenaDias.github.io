@@ -11,7 +11,7 @@
 	--project-item-bg-color: #e8e8e8;
 
 	/* Text color/style*/
-	--text-color: #4a4a4a;
+	--text-color: #000000;
 	--emphasis-color: #5b5ebe;
 	--nav-link-color: #aab0ee;
 	--link-color: #5b5ebe;
@@ -154,6 +154,11 @@ a:hover{
 em{
 	color: var(--emphasis-color);
 	font-style: normal;
+}
+
+em.italics-only{
+	color: var(--text-color);
+	font-style: italic;
 }
 
 .project-item p {
