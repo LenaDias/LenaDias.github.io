@@ -3,64 +3,126 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="../stylesheet.css"/>
 		<link rel = "icon" href = "../images/icon.png">
+
 		<title>Lena Dias | Collective Wisdom</title>
-		
-		<meta charset = "utf-8"/>
-		<meta name = "copyright" content = "Lena Sofia Dias"/>
+		<link rel="canonical" href="https://lenadias.com/projects/collectivewisdom">
+
 		<meta name = "site_name" content = "lenadias.com"/>
 		<meta name = "description" content = "Portfolio site for Lena Dias, Computer Scientist and Game Developer in Massachusetts."/>
+		<meta name = "copyright" content = "Lena Sofia Dias"/>
+		<meta name = "author" content="Lena Dias"/>
+		
+		
+		<meta charset = "utf-8"/>
 		<meta name = "url" content = "https://lenadias.com"/>
 		<meta name = "type" content = "website"/>
-		<meta name = "keywords" content = "game developer, game development, computer science, computer scientist, massachusetts, boston, portfolio"/>
-		
-		<meta name = "author" content="Lena Dias"/>
+		<meta name = "keywords" content = "game developer, game development, computer science, computer scientist, massachusetts, boston, portfolio, projects"/>
 		<meta name = "robots" content = "follow"/>
 		<meta http-equiv="cache-control" content="no-cache"/>
 	</head>
 	<body>
-		<div class = "flex-container">
-			<div class = "heading">
-				<h1 class = "nav">&lt; LENA DIAS &gt;</h1>
-				<h2 class = "subtitle">Computer Science & Game Development</h2>
+		<header>
+				<h1>&lt; LENA DIAS &gt;</h1>
+				<h2>Computer Science & Game Development</h2>
+				<nav>
+					<a href = "https://lenadias.com/">Home</a>
+					<a href = "https://lenadias.com/projects">Projects</a>
+					<a href = "https://lenadias.com/resume">Resume</a>
+					<a href = "https://lenadias.com/about">About</a>
+				</nav>
+		</header>
+
+		<h1>Collective Wisdom</h1>
+		<hr>
+
+		<section id="Project description">
+			A cozy, curious browser game about building societies using knowledge.
+		</section>
+
+		<section id="Project images">
+			<div class="project-images">
+				<img alt="The title screen, displaying the title &ldquo;Collective Wisdom&rdquo; and &ldquo;Team Double Jump.&rdquo; Like the rest of the game, it is grayscale. In the center of a screen is the earth, and on it are four buildings of increasing height." title="The title screen." class="project-image" src="../images/collectivewisdom.png">
+				<img alt="The first level of the game. &ldquo;A village...&rdquo; is displayed in the hint field, and under it are several black boxes. Below that, outlines of buildings rest on grassy fields." title="The first level. A village waits to be constructed." class="project-image" src="../images/collectivewisdom2.png">
+				<img alt="The first level, but this time, the player has moved one of the black boxes (pieces of &ldquo;wisdom&rdquo;) and placed it in a building outline. The hint field reads &ldquo;Found some wisdom...&rdquo;" title="The first level, where the player has found and placed some pieces of &ldquo;wisdom.&rdquo;" class="project-image" src="../images/collectivewisdom3.png">
+				<img alt="The completed village after all of the outlines have been filled in; chimneys let out smoke and clouds fill the sky in a tranquil scene. The text in the hint field reads &ldquo;A wise society prospers...&rdquo;" title="The constructed village, after the outlines of the buildings have been filled in." class="project-image" src="../images/collectivewisdom4.png">
+				<img alt="The next level, a factory with two smokestacks. The scenery is darker and the blocks larger. The hint reads &ldquo;Exploited some wisdom...&rdquo;" title="The next level, a factory." class="project-image" src="../images/collectivewisdom5.png">
+				<img alt="The completed factory, which now belches smoke into the air. The hint text reads &ldquo;Yet, wisdom can be used for evil.&rdquo;" title="The completed factory." class="project-image" src="../images/collectivewisdom6.png">
 			</div>
-			<nav>
-				<a href = "https://lenadias.com/">Home</a>
-				<a href = "https://lenadias.com/projects">Projects</a>
-				<a href = "https://lenadias.com/resume">Resume</a>
-				<a href = "https://lenadias.com/about">About</a>
-			</nav>
-			<div>
-				<h2 class = "page">Collective Wisdom</h2>
-				<hr>
-				<h4 class = "description"> 
-					Click <a href = "../resources/A39.zip" target="_blank">here</a> to download. 
-				</h4>
-				<h4 class = "description"> 
-					Click <a href = "../resources/A39/game.html" target="_blank">here</a> to play.
-				</h4>
-				<img class = "largeImage" src="../images/collectivewisdom.png">
-				<h4 class = "description">
-					A cozy browser game about building societies using knowledge.
-					</h4>
-				<h4 class = "description">
-					<em>Stats:</em>
-					<ul style = "list-style-position: inside;padding-left: 15%;">
-						<li>Language: Javascript</li>
-						<li>Tools: Perlenspiel, IntelliJ IDEA</li>
-						<li>Development time: ~3 days</li>
-						<li>Year: 2021</li>
-					</ul>
-					<br>Music credits:<br><br><a href="https://freesound.org/people/Angel_Perez_Grandi/sounds/49811/" target="_blank">"Village Morning Atmos" by Angel_Perez_Grandi</a><br><a href="https://freesound.org/people/vasifer/sounds/529470/" target="_blank">"factory" by vasifer</a><br><a href="https://freesound.org/people/tosha73/sounds/495302/" target="_blank">"Big City - 001" by tosha73</a><br><a href="https://freesound.org/people/TheoTeravainen/sounds/510918/" target="_blank">"Mysterious Ethereal Song" by TheoTeravainen</a></h3>
-			
-				</h4>
-				</div>
-		</div>
+		</section>
+
+		<section id="About project" class="project-details">
+			<h2>About:</h2>
+			<p>Collective Wisdom was created as part of a Digital Game Design class at WPI, and evolved over the course of multiple builds. It was created in Perlenspiel, an ultra-lightweight, Javascript-based game engine, which intentionally limits graphical possibilities to encourage intelligent, elegant design.  
+			</p>
+			<p>Players click on pieces of "wisdom" displayed at the top of the screen, dragging them to fit in the outlines shown on-screen. By doing so, players gradually assemble buildings which come to life in animations; essentially, players use wisdom to build progressively more advanced societies.
+			</p>
+		</section>
+
+		<section id="Development details" class="project-details">
+			<h2>Development details:</h2>
+			<p>
+				<em>Developed: </em>2021
+				<br><em>Development time: </em>~3 days
+				<br><em>Languages: </em>Javascript
+				<br><em>Tools: </em>Perlenspiel engine, IntelliJ IDEA, Aseprite
+			</p>
+		</section>
+
+		<section id="Project team" class="project-details">
+			<h2>Team:</h2>
+			<ul><li>Lena Dias (myself)</li></ul>
+		</section>
+
+		<section id="My role" class="project-details">
+			<h2>My role:</h2>
+			<p>
+				<em>Lead Programmer</em>
+			</p>
+			<ul>
+				<li>Programmed entirety of game, including click-and-dragging building parts, end-of-level animations, hint system, checks for valid object placement, and level data loading</li>
+				<li>Managed builds and release versions</li>
+			</ul>
+			<p>
+				<em>Lead Designer</em>
+			</p>
+			<ul>
+				<li>Created core game idea</li>
+				<li>Drew title screen pixel art</li>
+				<li>Created survey materials for gathering feedback on intuitivity, usability, stability</li>
+				<li>Reassessed design according to playtesting feedback</li>
+			</ul>
+		</section>
+
+		<section id="My thoughts" class="project-details">
+			<h2>My thoughts:</h2>
+			<p>
+				For the last assignment in Perlenspiel, I decided to try and push the engine's storytelling capabilities a little bit. This meant using the single line of text allowed to developers, which, until now, I'd sworn against using, worried it'd become a crutch for otherwise elegant design. What resulted is, I think, fairly whimsical, but also a little pretentious. But hey, what's the fun of art if you can't do a little grayscale pretentiousness sometimes, right? Originally, the blocks of "wisdom" at the top of the screen were conceived as words, but given that Perlenspiel only allows the display of one Unicode character per pixel, I couldn't express many interesting words. I settled on conveying the abstraction through text instead and— oh! Now that I think about it, why didn't I use the book Unicode character? Or, perhaps, rely on a story that involves less abstract themes? I am quite proud, though, of the little animations and the click-and-drag and block placement systems, which had to be programmed manually. 
+			</p>
+		</section>
+
+		<section id="Project links" class="project-details">
+			<h2>Links:</h2>
+			<p>
+				Download <a href="../resources/A39.zip" target="_blank">here</a>
+				<br>Play online <a href="../resources/A39/game.html" target="_blank">here</a>
+			</p>
+			<h2>Music credits:</h2>
+			<p>
+				<ul>
+					<li><a href="https://freesound.org/people/Angel_Perez_Grandi/sounds/49811/" target="_blank">"Village Morning Atmos" by Angel_Perez_Grandi</a></li>
+					<li><a href="https://freesound.org/people/vasifer/sounds/529470/" target="_blank">"factory" by vasifer</a></li>
+					<li><a href="https://freesound.org/people/tosha73/sounds/495302/" target="_blank">"Big City - 001" by tosha73</a></li>
+					<li><a href="https://freesound.org/people/TheoTeravainen/sounds/510918/" target="_blank">"Mysterious Ethereal Song" by TheoTeravainen</a></li>
+				</ul>
+			</p>
+		</section>
+
 		<footer>
-			<h4 class = "small">
 			Website was coded by myself using HTML and CSS.
-			<br> Font is Open-Sans from Google APIs.
-			<br> Site © Lena Sofia Dias 2022 
-			</h4>
+			<br> 
+			Font is Open-Sans from Google APIs.
+			<br> 
+			Site © Lena Sofia Dias 2023
 		</footer>
 	</body>
 </html>
