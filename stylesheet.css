@@ -69,9 +69,6 @@ nav{
 
 nav > a{
 	font-size: 14pt;
-}
-
-nav > a{
 	color: var(--nav-link-color);
 }
 
@@ -151,6 +148,7 @@ a:hover{
 	text-decoration: underline;
 }
 
+/*
 em{
 	color: var(--emphasis-color);
 	font-style: normal;
@@ -159,7 +157,7 @@ em{
 em.italics-only{
 	color: var(--text-color);
 	font-style: italic;
-}
+}*/
 
 .project-item p {
 	font-size: 12pt;
