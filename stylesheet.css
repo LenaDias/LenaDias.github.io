@@ -256,6 +256,9 @@ em.italics-only{
 	grid-row-gap: 5px;
 	grid-column-gap: 5px;
 }
+.two-column {
+	grid-template-columns: 1fr 1fr;
+}
 
 
 /* Footer */
