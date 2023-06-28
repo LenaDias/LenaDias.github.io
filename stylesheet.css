@@ -207,6 +207,32 @@ em.italics-only{
 	box-shadow: 0 0 0 3px var(--emphasis-color);
 }
 
+/**For image with award*/
+.award-and-image{
+	position: relative;
+	float:left;
+}
+.with-award{
+	position: absolute;
+	z-index: 1;
+}
+.award-on-image{
+	z-index: 3;
+	position: relative;
+	top: -40px;
+  left: -140px;
+  width: 50%;
+  height: 50%;
+}
+.award{
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 150px;
+  height: auto;
+}
+
 
 /* Containers */
 .grid-container {
