@@ -203,8 +203,9 @@ em.italics-only{
 }
 
 .headshot{
+	justify-self: center;
 	margin: 0;
-	display: inline-block;
+	margin-bottom: 20px;
 	width: 15rem;
 	box-shadow: 0 0 0 3px var(--emphasis-color);
 }
