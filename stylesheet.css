@@ -34,6 +34,8 @@ body {
 	overflow: scroll;
 
 	min-width:300px;
+
+	display: grid;
 }
 
 
@@ -112,11 +114,13 @@ h3 {
 /* Content text */
 section {
 	/* Descriptive text */
-	margin: 60px;
+	margin: auto;
 	margin-top: 0px;
 	margin-bottom: 10px;
 	font-size: 16px;
 	font-weight: 100;
+
+	justify-self: center;
 }
 .project-details{
 	display:flex;
@@ -175,7 +179,7 @@ em.italics-only{
 .thumbnail:hover
 {
 	box-shadow: 0 0 0 3px var(--emphasis-color);
-	transform: scale(1.05);
+	transform: scale(1.02);
 
 }
 .project-image{
@@ -340,8 +344,4 @@ ul{
 	padding: 0px;
 	padding-left: 1.17em;
 	text-align: left;
-}
-
-.typewriter{
-
 }
