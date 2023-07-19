@@ -240,6 +240,15 @@ iframe.video{
 	height:30%;
 }
 
+.award{
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 150px;
+  height: auto;
+}
+
 iframe.embedded-pdf{
 	align-self: center;
 	height:780px;
