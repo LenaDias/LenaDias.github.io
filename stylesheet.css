@@ -149,16 +149,20 @@ a:hover{
 	text-decoration: underline;
 }
 
-/*
-em{
-	color: var(--emphasis-color);
-	font-style: normal;
+
+ul{
+	margin: 0px;
+	margin-bottom: 20px;
+	padding: 0px;
+	padding-left: 1.17em;
+	text-align: left;
 }
 
-em.italics-only{
-	color: var(--text-color);
-	font-style: italic;
-}*/
+ul>ul{
+	/* Sub-bullets */
+	margin-bottom: 3px;
+}
+
 
 .project-item p {
 	font-size: 12pt;
@@ -204,13 +208,13 @@ em.italics-only{
 }
 
 iframe.video{
-	/**YouTube video embed**/
+	/* YouTube video embed */
 	width: 100%;
 	aspect-ratio: 16 / 9;
 }
 
 .headshot{
-	/**Image of self**/
+	/* Image of self */
 	justify-self: center;
 	margin: 0;
 	margin-bottom: 20px;
@@ -300,12 +304,35 @@ iframe.embedded-pdf{
 	grid-row-gap: 5px;
 	grid-column-gap: 5px;
 }
+
 .two-column {
 	grid-template-columns: 1fr 1fr;
 }
 
 .three-column {
 	grid-template-columns: repeat(3, minmax(0, 1fr));
+	
+}
+
+.home-virtues {
+	/* For virtues on home page */
+	display: grid;
+	width: 80%;
+
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-auto-rows: auto;
+
+	grid-auto-flow: row;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+
+	row-gap: 15px;
+	column-gap: 15px;
+
+	justify-content: center;
 	
 }
 
@@ -328,17 +355,4 @@ hr{
 	margin-right: 10px;
 	margin-top: 0;
 	margin-bottom: 15px;
-}
-
-ul{
-	margin: 0px;
-	margin-bottom: 20px;
-	padding: 0px;
-	padding-left: 1.17em;
-	text-align: left;
-}
-
-ul>ul{
-	/**Sub-bullets**/
-	margin-bottom: 3px;
 }
