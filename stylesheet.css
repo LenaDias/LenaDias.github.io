@@ -281,7 +281,7 @@ iframe.embedded-pdf{
 .project-item{
 	/* Container for project thumbnail links */
 	background-color: var(--project-item-bg-color);
-	height: minmax(100%, fit-content);
+	height: minmax(30%, fit-content);
 	padding: 20px; */
 	font-size: 12pt;
 }
@@ -303,6 +303,10 @@ iframe.embedded-pdf{
 
 	grid-row-gap: 5px;
 	grid-column-gap: 5px;
+}
+
+.border{
+	box-shadow: 0 0 0 1px var(--text-color);
 }
 
 .two-column {
