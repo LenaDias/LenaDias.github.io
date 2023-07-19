@@ -186,6 +186,7 @@ ul>ul{
 	transform: scale(1.02);
 
 }
+
 .project-image{
   /*overflow: visible;*/
 	padding:0;
@@ -225,7 +226,6 @@ iframe.video{
 /**For image with award*/
 .award-and-image{
 	position: relative;
-	float:left;
 }
 .with-award{
 	position: absolute;
@@ -233,19 +233,11 @@ iframe.video{
 }
 .award-on-image{
 	z-index: 3;
-	position: relative;
-	top: -40px;
-  left: -140px;
-  width: 50%;
-  height: 50%;
-}
-.award{
-	display: block;
-	margin: auto;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 150px;
-  height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:auto;
+	height:30%;
 }
 
 iframe.embedded-pdf{
@@ -304,11 +296,9 @@ iframe.embedded-pdf{
 	grid-row-gap: 5px;
 	grid-column-gap: 5px;
 }
-
 .border{
 	box-shadow: 0 0 0 1px var(--text-color);
 }
-
 .two-column {
 	grid-template-columns: 1fr 1fr;
 }
