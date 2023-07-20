@@ -216,8 +216,9 @@ ul>ul{
 	padding:0;
 	margin: 0 auto;
 	margin-bottom: 10px;
-	width: 100%;
-	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 330px;
   transition: transform .2s;
 }
 .thumbnail:hover
