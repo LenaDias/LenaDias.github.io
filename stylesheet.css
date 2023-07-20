@@ -18,7 +18,6 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-
 /* Body */
 body {
 	background-color: var(--main-bg-color);
@@ -28,7 +27,7 @@ body {
 	padding: 0;
 
 	text-align: center;
-	font-size: 14pt;
+	font-size: 14px;
 	margin: 0;
 
 	overflow: scroll;
@@ -43,8 +42,8 @@ body {
 /*Header*/
 header {
 	background-color: var(--heading-bg-color);
-	text-justify: center;
 	text-align: center;
+	width: 100%;
 }
 
 nav{
@@ -71,6 +70,11 @@ nav > a{
 	font-size: 14pt;
 	color: var(--nav-link-color);
 }
+@media screen and (max-width: 600px) {
+  nav > a{
+		font-size: 17px;
+	}
+}
 
 
 /* Headings */
@@ -81,6 +85,11 @@ header h1 {
 	margin: 0;
 
 }
+@media screen and (max-width: 600px) {
+  header h1{
+		font-size: 35px;
+	}
+}
 
 header h2 {
 	/* Site subtitle */
@@ -88,11 +97,21 @@ header h2 {
 	margin: 0;
 	margin-bottom: 5pt;
 }
+@media screen and (max-width: 600px) {
+  header h2{
+		font-size: 15px;
+	}
+}
 
 h1 {
 	/* Page name */
 	font-size: 24pt;
 	margin: 10pt;
+}
+@media screen and (max-width: 600px) {
+  h1{
+		font-size: 27px;
+	}
 }
 
 h2 {
@@ -100,10 +119,20 @@ h2 {
 	margin:0;
 	padding:0;
 }
+@media screen and (max-width: 600px) {
+  h2{
+		font-size: 18px;
+	}
+}
 .project-details h2{
-	font-size: 1.17em;
+	font-size: 15px;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
+}
+@media screen and (max-width: 600px) {
+  .project-details h2{
+		font-size: 1.17em;
+	}
 }
 
 h3 {
@@ -119,9 +148,17 @@ section {
 	margin-bottom: 10px;
 	font-size: 16px;
 	font-weight: 100;
+	text-align: center;
+	padding: 10px;
 
 	justify-self: center;
 }
+@media screen and (max-width: 600px) {
+  section{
+		font-size: 15px;
+	}
+}
+
 .project-details{
 	display:flex;
 	flex-direction: column;
@@ -165,10 +202,14 @@ ul>ul{
 
 
 .project-item p {
-	font-size: 12pt;
+	font-size: 15px;
 	margin-bottom: 0;
 }
-	
+@media screen and (max-width: 600px) {
+  .project-item p{
+		font-size: 15px;
+	}
+}
 
 /* Images */
 .thumbnail
@@ -283,9 +324,17 @@ iframe.embedded-pdf{
 	/* Container for project thumbnail links */
 	background-color: var(--project-item-bg-color);
 	height: minmax(30%, fit-content);
-	padding: 20px; */
-	font-size: 12pt;
+	padding: 20px; 
+	font-size: 12px;
 }
+@media screen and (max-width: 600px) {
+  .project-item{
+		font-size: 13px;
+		padding: 5px;
+		padding-bottom: 10px;
+	}
+}
+
 .project-images {
 	/* Grid for project pages */
 	display: grid;
@@ -333,7 +382,7 @@ iframe.embedded-pdf{
 	margin-bottom: 50px;
 
 	row-gap: 15px;
-	column-gap: 15px;
+	column-gap: 20px;
 
 	justify-content: center;
 	
@@ -351,6 +400,12 @@ footer{
 	font-weight: 100;
 }
 
+@media screen and (max-width: 600px) {
+  footer{
+		font-size: 13px;
+	}
+}
+
 
 /* Misc elements */
 hr{
@@ -358,4 +413,6 @@ hr{
 	margin-right: 10px;
 	margin-top: 0;
 	margin-bottom: 15px;
+
+	border: 1px solid var(--text-color);
 }
