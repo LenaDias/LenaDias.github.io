@@ -218,7 +218,7 @@ ul>ul{
 	margin-bottom: 10px;
 	width: auto;
 	max-width: 100%;
-	max-height: 330px;
+	height: 100%;
   transition: transform .2s;
 }
 .thumbnail:hover
@@ -227,15 +227,22 @@ ul>ul{
 	transform: scale(1.02);
 
 }
-@media screen and (min-width: 1400px)
-{
-	.thumbnail{
+.allow-stretch{
+/* To match the height of neurotype cafe which is absolutely positioned*/
+/* unused */	
 		height: 100%;
 		max-height: 330px;
-	}
+}
+
+.thumbnail-wrapper{
+	/* Maintains aspect ratio to even out item height */
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
 }
 
 .project-image{
+	/*For project details pages*/
   /*overflow: visible;*/
 	padding:0;
 	margin: 0 auto;
@@ -274,6 +281,8 @@ iframe.video{
 /**For image with award*/
 .award-and-image{
 	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
 }
 .with-award{
 	position: absolute;
@@ -282,10 +291,17 @@ iframe.video{
 .award-on-image{
 	z-index: 3;
 	position: absolute;
-	top: 0;
-	left: 0;
+	top: -5%;
+	left: -2%;
 	width:auto;
-	height:30%;
+	height:40%;
+}
+@media screen and (max-width: 1000px) {
+  .award-on-image{
+  	top: -13%;
+		left: -8%;
+		height:50%;
+	}
 }
 
 .award{
@@ -385,8 +401,8 @@ iframe.embedded-pdf{
 
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 
 	row-gap: 15px;
 	column-gap: 20px;
