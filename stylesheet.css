@@ -394,6 +394,11 @@ iframe.embedded-pdf{
 	justify-content: center;
 	
 }
+@media screen and (max-width: 600px){
+	.home-virtues{
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
 
 
 /* Footer */
