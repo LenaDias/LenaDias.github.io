@@ -78,16 +78,16 @@
 
 		<section id="My role" class="project-details">
 			<h2>My role:</h2>
-			<p>
+			<h3>
 				Lead Programmer
-			</p>
+			</h3>
 			<ul>
 				<li>Programmed entirety of game, including randomized colors, mouse behavior, audio, and adjustments for sound cascading</li>
 				<li>Managed builds and release versions</li>
 			</ul>
-			<p>
+			<h3>
 				Lead Designer
-			</p>
+			</h3>
 			<ul>
 				<li>Created core game idea</li>
 				<li>Drew title screen pixel art</li>
@@ -96,10 +96,15 @@
 			</ul>
 		</section>
 
-		<section id="My thoughts" class="project-details">
-			<h2>My thoughts:</h2>
+		<section id="Lessons learned" class="project-details">
+			<h2>Lessons learned:</h2>
+			<h3>Design for instant, innate satisfaction to get players invested before pushing further.</h3>
 			<p>
-				I think this was a solid little toy! Development of this one was mainly about making something satisfying to play around with— if it holds player attention for a solid 30 seconds or so, that's a victory, especially for how simple it is. Unfortunately, it was developed during quite a busy week, but I had plans at the time to make the colors cycle to provide more pleasing rainbow patterns. There's also a bug in here that involves the sound stacking if too many sounds play at once, an unfortunate bug in Perlenspiel itself; it could've easily been alleviated by using an object pool design pattern to track how many sounds play at once. I also planned to have ripples cascade off of each other, but I sacrificed this feature due to framerate issues (though, maybe it could've been fun for the player to "break" the game?)
+				Development of this one was mainly about making something satisfying to play around with— if it holds player attention for a solid 30 seconds or so, that's a victory, especially for how simple it is. I could've made it more innately gratifying with some code to create more pleasing color patterns (in fact, I had plans to).
+			</p>
+			<h3>Be aware of technical limitations.</h3>
+			<p>
+				There's a bug in here that involves the sound stacking if too many sounds play at once, an unfortunate bug in Perlenspiel itself; it could've easily been alleviated by using an object pool design pattern to track how many sounds play at once. I also planned to have ripples cascade off of each other, but I sacrificed this feature due to framerate issues (though, maybe it could've been fun for the player to "break" the game?)
 			</p>
 		</section>
 
