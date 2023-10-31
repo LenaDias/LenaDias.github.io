@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="resources">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/resources/A39.zip!/" />
+      <root url="jar://$PROJECT_DIR$/resources/A17.zip!/" />
+      <root url="jar://$PROJECT_DIR$/resources/A29.zip!/" />
+      <root url="jar://$PROJECT_DIR$/resources/procAI.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
